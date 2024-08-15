@@ -12,7 +12,7 @@ const QrCodeGenerator: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     if (inputText.trim()) {
-      const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(
+      const qrCodeApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(
         inputText
       )}`;
       setQrCodeUrl(qrCodeApiUrl);

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: theme('colors.white');
+  --text-color: theme('colors.gray.800');
+  --card-background: theme('colors.white');
+  --card-border: theme('colors.gray.200');
+  --input-background: theme('colors.white');
+  --input-border: theme('colors.gray.300');
+  --page-background: linear-gradient(to bottom right, theme('colors.blue.100'), theme('colors.purple.100'));
+}
+
+.dark-theme {
+  --background-color: theme('colors.gray.900');
+  --text-color: theme('colors.white');
+  --card-background: theme('colors.gray.800');
+  --card-border: theme('colors.gray.700');
+  --input-background: theme('colors.gray.700');
+  --input-border: theme('colors.gray.600');
+  --page-background: theme('colors.gray.900');
+}
+
+body {
+  background: var(--page-background);
+  color: var(--text-color);
+}

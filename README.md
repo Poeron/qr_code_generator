@@ -19,10 +19,6 @@ A modern, feature-rich QR code generator and scanner built with React, TypeScrip
 - **Dark Mode**: Toggle between light and dark themes
 - **Mobile Responsive**: Works great on all device sizes
 
-## Demo
-
-[Live Demo](#) (Replace with your deployed project URL)
-
 ## Tech Stack
 
 - **React**: Frontend UI library

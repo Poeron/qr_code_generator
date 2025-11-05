@@ -32,9 +32,15 @@ const QrCodeGenerator: React.FC = () => {
   const [scannedResult, setScannedResult] = useState<string | null>(null);
   const [showShareOptions, setShowShareOptions] = useState<boolean>(false);
 
-  // Initialize darkMode state from document class
+  // Initialize darkMode state from localStorage
   const [darkMode, setDarkMode] = useState<boolean>(() => {
-    return document.documentElement.classList.contains('dark-theme');
+    try {
+      const savedPreference = localStorage.getItem('darkModePreference');
+      return savedPreference === 'true';
+    } catch (error) {
+      console.error('Error loading dark mode preference:', error);
+      return false;
+    }
   });
 
   // Save history to localStorage whenever it changes
@@ -50,9 +56,9 @@ const QrCodeGenerator: React.FC = () => {
   // Update document class and localStorage when darkMode changes
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.classList.add('dark-theme');
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark-theme');
+      document.documentElement.classList.remove('dark');
     }
     localStorage.setItem('darkModePreference', String(darkMode));
   }, [darkMode]);
@@ -211,8 +217,8 @@ const QrCodeGenerator: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen flex items-center justify-center ${darkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-blue-100 to-purple-100'}`}>
-      <div className={`${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'} p-8 rounded-xl shadow-lg w-full max-w-lg mx-auto`}>
+    <div className={`min-h-screen flex items-center justify-center ${darkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-blue-100 to-purple-100'} p-4`}>
+      <div className={`${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'} p-8 rounded-xl shadow-lg w-full max-w-4xl mx-auto`}>
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold">QR Code Generator</h1>
           <button 

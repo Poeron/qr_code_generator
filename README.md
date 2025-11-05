@@ -2,8 +2,9 @@
 
 A modern, feature-rich QR code generator and scanner built with React, TypeScript, and Tailwind CSS.
 
-![QR Code Generator Screenshot](![image](https://github.com/user-attachments/assets/6f9810f0-ee65-4bff-8ff6-770497d77c12)
+![QR Code Generator Screenshot](<img width="948" height="812" alt="image" src="https://github.com/user-attachments/assets/420ae408-7a0c-4aee-8b1b-022355a2e94c" />)
 )
+
 
 ## Features
 
@@ -31,7 +32,7 @@ A modern, feature-rich QR code generator and scanner built with React, TypeScrip
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/qr_code_generator.git
+   git clone https://github.com/Poeron/qr_code_generator.git
    cd qr_code_generator
    ```
 

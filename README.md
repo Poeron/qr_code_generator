@@ -2,7 +2,8 @@
 
 A modern, feature-rich QR code generator and scanner built with React, TypeScript, and Tailwind CSS.
 
-![QR Code Generator Screenshot](https://via.placeholder.com/800x450.png?text=QR+Code+Generator+Screenshot)
+![QR Code Generator Screenshot](![image](https://github.com/user-attachments/assets/6f9810f0-ee65-4bff-8ff6-770497d77c12)
+)
 
 ## Features
 
@@ -17,10 +18,6 @@ A modern, feature-rich QR code generator and scanner built with React, TypeScrip
 - **History Tracking**: Save recently generated QR codes for quick access
 - **Dark Mode**: Toggle between light and dark themes
 - **Mobile Responsive**: Works great on all device sizes
-
-## Demo
-
-[Live Demo](#) (Replace with your deployed project URL)
 
 ## Tech Stack
 

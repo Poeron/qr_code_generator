@@ -2,8 +2,7 @@
 
 A modern, feature-rich QR code generator and scanner built with React, TypeScript, and Tailwind CSS.
 
-![QR Code Generator Screenshot](<img width="948" height="812" alt="image" src="https://github.com/user-attachments/assets/420ae408-7a0c-4aee-8b1b-022355a2e94c" />)
-)
+<img width="948" height="812" alt="image" src="https://github.com/user-attachments/assets/420ae408-7a0c-4aee-8b1b-022355a2e94c" />
 
 
 ## Features
